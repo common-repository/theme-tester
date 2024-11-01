@@ -1,0 +1,31 @@
+{
+    "landingPage": "\/wp-admin\/themes.php?page=themetester-config",
+    "preferredVersions": {
+        "php": "7.4",
+        "wp": "6.4.1"
+    },
+    "phpExtensionBundles": [
+        "kitchen-sink"
+    ],
+    "steps": [
+        {
+            "step": "login",
+            "username": "admin",
+            "password": "password"
+        },
+		{
+			"step": "installTheme",
+			"themeZipFile": {
+				"resource": "wordpress.org\/themes",
+				"slug": "twentytwentyone"
+			}
+		},
+		{
+			"step": "installTheme",
+			"themeZipFile": {
+				"resource": "wordpress.org\/themes",
+				"slug": "twentytwentytwo"
+			}
+		}
+    ]
+}
